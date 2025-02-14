@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- JavaScript for language switch -->
 </head>
 <body>
 
@@ -18,18 +19,27 @@
         <!-- Navigation Wrapper for True Centering -->
         <div class="nav-container">
             <nav>
-                <a href="#">Blogs</a>
-                <a href="#">Hobbies</a>
-                <a href="#">Play</a>
-                <a href="#">Contact</a>
+                <a href="#" data-key="blogs">Blogs</a>
+                <a href="#" data-key="hobbies">Hobbies</a>
+                <a href="#" data-key="play">Play</a>
+                <a href="#" data-key="contact">Contact</a>
             </nav>
+        </div>
+
+        <!-- Language Selection Dropdown -->
+        <div class="language-selector">
+            <select id="language-switcher">
+                <option value="en">English</option>
+                <option value="mr">Marathi</option>
+                <option value="sa">Sanskrit</option>
+            </select>
         </div>
     </header>
 
     <!-- Main Content -->
     <div class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my blogs, hobbies, and interactive games.</p>
+        <h1 data-key="welcome">Welcome to My Portfolio</h1>
+        <p data-key="description">Explore my blogs, hobbies, and interactive games.</p>
     </div>
 
 </body>
