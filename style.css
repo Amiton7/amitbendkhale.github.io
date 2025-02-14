@@ -1,67 +1,39 @@
-/* General Page Styling */
+/* General Styles */
 body {
-    background-color: #1E1E1E;  /* Dark gray */
-    color: #E0E0E0;  /* Light gray text */
+    background-color: #1E1E1E; /* Main background (dark gray) */
+    color: #E0E0E0;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Centering Content */
-.container {
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
-}
-
-/* Headings */
-h1, h2, h3 {
-    color: #FFFFFF;
+/* Header Bar */
+header {
+    background-color: #141414; /* Slightly darker than body */
+    padding: 15px 0;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
-/* Navigation Bar */
+/* Navigation Links */
 nav {
-    background-color: #252525;  /* Slightly lighter gray */
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
+
 nav a {
-    color: #00AEEF;  /* Neon blue */
+    color: #00AEEF; /* Neon blue */
     text-decoration: none;
-    padding: 10px 20px;
     font-size: 18px;
+    padding: 10px 15px;
+    transition: color 0.3s ease-in-out;
 }
+
 nav a:hover {
-    color: #00FFFF; /* Cyan on hover */
-}
-
-/* Sections */
-section {
-    background-color: #2A2A2A; /* Darker shade */
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-}
-
-/* Buttons */
-button {
-    background-color: #00AEEF;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-button:hover {
-    background-color: #00FFFF;  /* Cyan */
-}
-
-/* Links */
-a {
-    color: #00AEEF;
-}
-a:hover {
-    color: #00FFFF;
+    color: #00FFFF; /* Bright cyan on hover */
 }
