@@ -1,14 +1,8 @@
 // Language Translations
 const translations = {
-    en: {
-        blogs: "Blogs",
-        hobbies: "Hobbies",
-        play: "Play",
-        contact: "Contact",
-        welcome: "Welcome to My Portfolio",
-        description: "Explore my blogs, hobbies, and interactive games."
-    },
     mr: {
+        first-name: "अमित",
+        last-name: "बेंढखले",
         blogs: "ब्लॉग्स",
         hobbies: "छंद",
         play: "खेळ",
@@ -17,12 +11,24 @@ const translations = {
         description: "माझे ब्लॉग्स, छंद आणि परस्परसंवादी खेळ एक्सप्लोर करा."
     },
     sa: {
+        first-name: "अमितः",
+        last-name: "बेंढखलेः",
         blogs: "ब्लॉगाः",
         hobbies: "विनोदाः",
         play: "क्रीडाः",
         contact: "संपर्कः",
         welcome: "मम पोर्टफोलियो मध्ये स्वागतं अस्ति",
         description: "मम ब्लॉगाः, विनोदाः, क्रीडाः च अन्वेषणं कुर्वन्तु।"
+    },
+    en: {
+        first-name: "Amit",
+        last-name: "Bendkhale",
+        blogs: "Blogs",
+        hobbies: "Hobbies",
+        play: "Play",
+        contact: "Contact",
+        welcome: "Welcome to My Portfolio",
+        description: "Explore my blogs, hobbies, and interactive games."
     }
 };
 
@@ -44,7 +50,7 @@ document.getElementById("language-switcher").addEventListener("change", function
 
 // Load Saved Language on Page Load
 document.addEventListener("DOMContentLoaded", () => {
-    const savedLanguage = localStorage.getItem("selectedLanguage") || "en";
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "mr"; // Default Marathi
     document.getElementById("language-switcher").value = savedLanguage;
     changeLanguage(savedLanguage);
 });
