@@ -2,7 +2,7 @@
 const translations = {
     mr: {
         first-name: "अमित",
-        last-name: "बेंढखले",
+        last-name: "बेंडखळे",
         blogs: "ब्लॉग्स",
         hobbies: "छंद",
         play: "खेळ",
@@ -11,8 +11,8 @@ const translations = {
         description: "माझे ब्लॉग्स, छंद आणि परस्परसंवादी खेळ एक्सप्लोर करा."
     },
     sa: {
-        first-name: "अमितः",
-        last-name: "बेंढखलेः",
+        first-name: "अमित",
+        last-name: "बेंडखळे",
         blogs: "ब्लॉगाः",
         hobbies: "विनोदाः",
         play: "क्रीडाः",
