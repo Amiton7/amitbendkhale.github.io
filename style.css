@@ -60,3 +60,12 @@ nav a {
 nav a:hover {
     color: #8B5E3C; /* Slightly darker brown on hover */
 }
+
+/* Fix Main Content Alignment */
+.container {
+    text-align: center;  /* Centers text */
+    padding-top: 150px;  /* Pushes content below the header */
+    max-width: 800px;  /* Prevents overly wide text */
+    margin: auto;  /* Ensures the content is centered horizontally */
+}
+
