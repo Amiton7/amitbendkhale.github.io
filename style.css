@@ -1,15 +1,15 @@
 /* General Page Styling */
 body {
-    background-color: #F5DEB3;  /* Light parchment yellow (old paper effect) */
-    color: #333333;  /* Dark gray text for readability */
-    font-family: Arial, sans-serif; /* Back to original font */
+    background-color: #FAF3DD;  /* Light yellowish-white with an ochre touch */
+    color: #3B2F2F;  /* Dark brown for readability */
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 /* Header Bar (Book Cover Color) */
 header {
-    background-color: #8B4513; /* Rich brown like an old book cover */
+    background-color: #cf9f4d; /* Warm golden-brown */
     padding: 15px 0;
     text-align: center;
     position: fixed;
@@ -27,7 +27,7 @@ nav {
 }
 
 nav a {
-    color: #FFD700; /* Golden yellow text */
+    color: #5A3E1B; /* Dark brown text for contrast */
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -36,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFFACD; /* Light cream on hover */
+    color: #8B5E3C; /* Slightly darker brown on hover */
 }
 
 /* Main Content Alignment */
