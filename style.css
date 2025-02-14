@@ -22,6 +22,8 @@ header {
     top: 0;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Name Styling (Left-Aligned) */
@@ -29,7 +31,6 @@ header {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
-    margin-left: 30px; /* Ensures name stays on the left */
 }
 
 /* Name Colors */
@@ -42,7 +43,7 @@ header {
 .logo .last-name {
     font-size: 22px;
     font-weight: bold;
-    color: #B22222; /* Brighter Red (Orange-Red) */
+    color: #B22222; /* Brighter Red */
 }
 
 /* 🔹 Navigation Fix - Forces Exact Center */
@@ -71,10 +72,16 @@ nav a:hover {
     color: #8B5E3C; /* Slightly darker brown on hover */
 }
 
-/* 🔹 Fix for Main Content Centering */
-.container {
-    text-align: center;  /* Centers text */
-    padding-top: 120px;  /* Pushes content below the header */
-    max-width: 800px;  /* Prevents overly wide text */
-    margin: auto;  /* Ensures the content is centered horizontally */
+/* 🔹 Language Selector */
+.language-selector {
+    margin-right: 20px;
+}
+
+.language-selector select {
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #5A3E1B;
+    background-color: #FFF5E1;
+    cursor: pointer;
 }
