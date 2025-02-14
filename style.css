@@ -1,11 +1,67 @@
+/* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
+    background-color: #1E1E1E;  /* Dark gray */
+    color: #E0E0E0;  /* Light gray text */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centering Content */
+.container {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+}
+
+/* Headings */
+h1, h2, h3 {
+    color: #FFFFFF;
     text-align: center;
-    background-color: #f4f4f4;
 }
-h1 {
-    color: #333;
+
+/* Navigation Bar */
+nav {
+    background-color: #252525;  /* Slightly lighter gray */
+    padding: 10px;
+    text-align: center;
 }
-p {
+nav a {
+    color: #00AEEF;  /* Neon blue */
+    text-decoration: none;
+    padding: 10px 20px;
     font-size: 18px;
+}
+nav a:hover {
+    color: #00FFFF; /* Cyan on hover */
+}
+
+/* Sections */
+section {
+    background-color: #2A2A2A; /* Darker shade */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Buttons */
+button {
+    background-color: #00AEEF;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #00FFFF;  /* Cyan */
+}
+
+/* Links */
+a {
+    color: #00AEEF;
+}
+a:hover {
+    color: #00FFFF;
 }
