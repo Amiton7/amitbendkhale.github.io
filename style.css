@@ -42,7 +42,7 @@ header {
 .logo .last-name {
     font-size: 22px;
     font-weight: bold;
-    color: #FF2400; /* Brighter Red (Orange-Red) */
+    color: #DC143C; /* Brighter Red (Orange-Red) */
 }
 
 /* 🔹 Navigation Fix - Forces Exact Center */
