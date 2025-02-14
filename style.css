@@ -1,15 +1,15 @@
 /* General Page Styling */
 body {
-    background-color: #F5DEB3;  /* Warm yellowish-white (like old paper) */
-    color: #3B2F2F;  /* Dark brown for readability */
-    font-family: 'Georgia', serif; /* Classic book-like font */
+    background-color: #F5DEB3;  /* Light parchment yellow (old paper effect) */
+    color: #3B2F2F;  /* Dark brown text */
+    font-family: 'Georgia', serif;
     margin: 0;
     padding: 0;
 }
 
 /* Header Bar (Book Cover Color) */
 header {
-    background-color: #cf9f4d; /* SaddleBrown - A rich book cover color */
+    background-color: #8B4513; /* Rich brown like an old book cover */
     padding: 15px 0;
     text-align: center;
     position: fixed;
@@ -36,5 +36,5 @@ nav a {
 }
 
 nav a:hover {
-    color: #FFFACD; /* Lighter gold (cream) on hover */
+    color: #FFFACD; /* Light cream on hover */
 }
