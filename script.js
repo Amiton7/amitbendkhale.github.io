@@ -1,5 +1,4 @@
-// Ensure script runs only after the page loads completely
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function() {
     const languageSwitcher = document.getElementById("language-switcher");
 
     // Language Translations
@@ -15,8 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "माझे ब्लॉग्स, छंद आणि परस्परसंवादी खेळ एक्सप्लोर करा."
         },
         sa: {
-            first-name: "अमित",
-            last-name: "बेंडखळे",
+            first-name: "अमितः",
+            last-name: "बेंडखळेः",
             blogs: "ब्लॉगाः",
             hobbies: "विनोदाः",
             play: "क्रीडाः",
