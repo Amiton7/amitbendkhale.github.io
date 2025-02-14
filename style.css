@@ -1,8 +1,8 @@
 /* General Page Styling */
 body {
     background-color: #F5DEB3;  /* Light parchment yellow (old paper effect) */
-    color: #3B2F2F;  /* Dark brown text */
-    font-family: 'Georgia', serif;
+    color: #333333;  /* Dark gray text for readability */
+    font-family: Arial, sans-serif; /* Back to original font */
     margin: 0;
     padding: 0;
 }
@@ -27,7 +27,7 @@ nav {
 }
 
 nav a {
-    color: #FFD700; /* Golden yellow text for contrast */
+    color: #FFD700; /* Golden yellow text */
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -37,4 +37,10 @@ nav a {
 
 nav a:hover {
     color: #FFFACD; /* Light cream on hover */
+}
+
+/* Main Content Alignment */
+.container {
+    text-align: center;
+    padding-top: 100px;
 }
