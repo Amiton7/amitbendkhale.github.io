@@ -1,3 +1,13 @@
+/* General Page Styling */
+body {
+    background-color: #FAF3DD;  /* Light yellowish-white (same as before) */
+    color: #3B2F2F;  /* Dark brown for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Ensures all text is centered */
+}
+
 /* Header Bar (Book Cover Color) */
 header {
     background-color: #cf9f4d; /* Warm golden-brown */
@@ -10,6 +20,8 @@ header {
     width: 100%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* Name Styling (Stacked Text) */
@@ -17,7 +29,6 @@ header {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
-    padding-left: 30px; /* Ensures name stays on the left */
 }
 
 .logo .first-name {
@@ -32,11 +43,11 @@ header {
     color: #8B0000; /* Dark Red for "Bendkhale" */
 }
 
-/* 🔹 Fix for Centering the Navigation Links */
+/* Centering Navigation Links */
 .nav-container {
-    flex-grow: 1;  /* Takes all available space between left and right */
+    flex-grow: 1;  /* Takes available space */
     display: flex;
-    justify-content: center; /* Ensures perfect centering */
+    justify-content: center;
 }
 
 /* Navigation Styling */
@@ -56,4 +67,10 @@ nav a {
 
 nav a:hover {
     color: #8B5E3C; /* Slightly darker brown on hover */
+}
+
+/* Fix Main Content Alignment */
+.container {
+    max-width: 800px;  /* Prevents overly wide text */
+    margin: 150px auto 0; /* Pushes it below the header and centers it */
 }
