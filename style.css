@@ -1,15 +1,15 @@
-/* General Styles */
+/* General Page Styling */
 body {
-    background-color: #1E1E1E; /* Main background (dark gray) */
+    background-color: #1E1E1E;  /* Main background (dark gray) */
     color: #E0E0E0;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Header Bar */
+/* Header Bar (Darker than background) */
 header {
-    background-color: #141414; /* Slightly darker than body */
+    background-color: #101010; /* Even darker than body */
     padding: 15px 0;
     text-align: center;
     position: fixed;
@@ -23,7 +23,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 nav a {
