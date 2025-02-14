@@ -1,15 +1,29 @@
+/* General Page Styling */
+body {
+    background-color: #FAF3DD;  /* Light yellowish-white */
+    color: #3B2F2F;  /* Dark brown text for readability */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Header Bar (Book Cover Color) */
 header {
     background-color: #cf9f4d; /* Warm golden-brown */
     padding: 15px 0;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* Equal spacing between elements */
+    grid-template-columns: auto 1fr auto; /* Balances name and nav */
     align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 /* Name Styling (Stacked Text) */
@@ -17,7 +31,6 @@ header {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
-    padding-left: 30px; /* Keeps the name on the left */
 }
 
 /* Name Colors */
@@ -56,4 +69,12 @@ nav a {
 
 nav a:hover {
     color: #8B5E3C; /* Slightly darker brown on hover */
+}
+
+/* 🔹 Fix for Main Content Centering */
+.container {
+    text-align: center;  /* Centers text */
+    padding-top: 120px;  /* Pushes content below the header */
+    max-width: 800px;  /* Prevents overly wide text */
+    margin: auto;  /* Ensures the content is centered horizontally */
 }
