@@ -39,15 +39,18 @@ header {
 .logo .last-name {
     font-size: 22px;
     font-weight: bold;
-    color: #FF0000; /* Red for "Bendkhale" */
+    color: #8B0000; /* Dark Red for "Bendkhale" */
 }
 
-/* Navigation Links */
+/* Navigation Styling */
 nav {
     display: flex;
+    flex: 1;
+    justify-content: center;  /* Center the links */
     gap: 40px;
 }
 
+/* Navigation Links */
 nav a {
     color: #5A3E1B; /* Dark brown text for contrast */
     text-decoration: none;
@@ -68,4 +71,3 @@ nav a:hover {
     max-width: 800px;  /* Prevents overly wide text */
     margin: auto;  /* Ensures the content is centered horizontally */
 }
-
