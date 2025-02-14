@@ -74,11 +74,15 @@ nav a:hover {
     color: #8B5E3C; /* Slightly darker brown on hover */
 }
 
-/* 🔹 Language Selector */
+/* 🔹 Language Selector - Fix Alignment */
 .language-selector {
-    margin-right: 20px;
+    position: absolute;
+    right: 20px; /* Keeps it properly aligned within the header */
+    top: 50%;
+    transform: translateY(-50%);
 }
 
+/* 🔹 Style the Dropdown */
 .language-selector select {
     font-size: 16px;
     padding: 5px;
@@ -86,7 +90,9 @@ nav a:hover {
     border: 1px solid #5A3E1B;
     background-color: #FFF5E1;
     cursor: pointer;
+    outline: none;
 }
+
 
 /* 🔹 Fix for Main Content Centering */
 .container {
