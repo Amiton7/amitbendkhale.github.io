@@ -1,27 +1,41 @@
-/* Header Bar */
+/* General Page Styling */
+body {
+    background-color: #FAF3DD;  /* Light yellowish-white */
+    color: #3B2F2F;  /* Dark brown text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 🔹 Header Bar - Fix Alignment Issues */
 header {
     background-color: #cf9f4d; /* Warm golden-brown */
     padding: 15px 0;
-    display: grid;
-    grid-template-columns: auto 1fr auto; /* Left (Name) | Center (Nav) | Right (Dropdown) */
+    display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 100%;
     position: fixed;
     top: 0;
-    width: 100%;
+    left: 0; /* Ensures no gap on the left */
+    right: 0;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
-/* Name Styling (Left-Aligned) */
+/* 🔹 Name Styling (Left-Aligned) */
 .logo {
     display: flex;
     flex-direction: column;
     line-height: 1.2;
 }
 
-/* Name Colors */
+/* 🔹 Name Colors */
 .logo .first-name {
     font-size: 22px;
     font-weight: bold;
@@ -36,13 +50,15 @@ header {
 
 /* 🔹 Navigation Fix - Forces Exact Center */
 .nav-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     width: 100%;
-    text-align: center;
 }
 
-/* Navigation Styling */
+/* 🔹 Navigation Styling */
 nav {
     display: flex;
     gap: 40px;
@@ -61,7 +77,7 @@ nav a:hover {
     color: #8B5E3C; /* Slightly darker brown on hover */
 }
 
-/* 🔹 Language Selector - Fixed Alignment & Smaller Size */
+/* 🔹 Language Selector - Fix Alignment & Size */
 .language-selector {
     display: flex;
     justify-content: flex-end;
@@ -77,4 +93,12 @@ nav a:hover {
     cursor: pointer;
     outline: none;
     width: 120px; /* Adjust width */
+}
+
+/* 🔹 Fix for Main Content Centering */
+.container {
+    text-align: center;  /* Centers text */
+    padding-top: 140px;  /* Pushes content BELOW the header */
+    max-width: 800px;  /* Prevents overly wide text */
+    margin: auto;  /* Ensures the content is centered horizontally */
 }
