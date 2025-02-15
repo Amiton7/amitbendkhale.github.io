@@ -43,12 +43,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to Change Language
     function changeLanguage(lang) {
-        console.log("Changing language to:", lang); // Debugging
+        console.log("Changing language to:", lang); // Debugging Log
 
         document.querySelectorAll("[data-key]").forEach(element => {
             const key = element.getAttribute("data-key");
             if (translations[lang] && translations[lang][key]) {
                 element.textContent = translations[lang][key];
+            } else {
+                console.warn(`Missing translation for key: ${key} in language: ${lang}`);
             }
         });
 
@@ -58,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event Listener for Language Selection
     languageSwitcher.addEventListener("change", function () {
+        console.log("Language changed to:", this.value); // Debugging Log
         changeLanguage(this.value);
     });
 
