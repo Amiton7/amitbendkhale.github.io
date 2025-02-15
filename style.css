@@ -20,7 +20,7 @@ header {
     width: 100%;
     position: fixed;
     top: 0;
-    left: 0; /* Ensures no gap on the left */
+    left: 0;
     right: 0;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
@@ -39,13 +39,13 @@ header {
 .logo .first-name {
     font-size: 22px;
     font-weight: bold;
-    color: #FFFFFF; /* White for "Amit" */
+    color: #FFFFFF;
 }
 
 .logo .last-name {
     font-size: 22px;
     font-weight: bold;
-    color: #B22222; /* Brighter Red */
+    color: #B22222;
 }
 
 /* 🔹 Navigation Fix - Forces Exact Center */
@@ -55,10 +55,8 @@ header {
     transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    width: auto; /* Ensure it only takes as much space as needed */
+    width: auto; /* Takes only required space */
 }
-
-
 
 /* 🔹 Navigation Styling */
 nav {
@@ -67,7 +65,7 @@ nav {
 }
 
 nav a {
-    color: #5A3E1B; /* Dark brown text */
+    color: #5A3E1B;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
@@ -76,15 +74,13 @@ nav a {
 }
 
 nav a:hover {
-    color: #8B5E3C; /* Slightly darker brown on hover */
+    color: #8B5E3C;
 }
 
-/* 🔹 Language Selector - Fix Alignment & Prevent Overflow */
+/* 🔹 Language Selector - Fix Alignment */
 .language-selector {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 10px;
-    position: relative; /* Allow precise control */
+    margin-left: auto; /* Pushes it to the right naturally */
+    padding-right: 20px;
 }
 
 .language-selector select {
@@ -96,16 +92,13 @@ nav a:hover {
     cursor: pointer;
     outline: none;
     width: 120px;
-    position: absolute;  /* Prevent overflow */
-    right: 0;  /* Ensures it doesn’t overflow */
-    max-width: 95%; /* Prevents it from going out of the screen */
+    max-width: 100%;
 }
-
 
 /* 🔹 Fix for Main Content Centering */
 .container {
-    text-align: center;  /* Centers text */
-    padding-top: 140px;  /* Pushes content BELOW the header */
-    max-width: 800px;  /* Prevents overly wide text */
-    margin: auto;  /* Ensures the content is centered horizontally */
+    text-align: center;
+    padding-top: 140px;
+    max-width: 800px;
+    margin: auto;
 }
