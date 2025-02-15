@@ -50,10 +50,14 @@ header {
 
 /* 🔹 Navigation Fix - Forces Exact Center */
 .nav-container {
-    flex-grow: 1; /* Allow nav-container to take remaining space */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center; /* Center navigation properly */
+    justify-content: center;
+    width: auto; /* Ensure it only takes as much space as needed */
 }
+
 
 
 /* 🔹 Navigation Styling */
