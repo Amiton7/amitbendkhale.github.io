@@ -1,15 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("✅ script.js is loaded and running!"); // Debugging
+    console.log("✅ script1.js is loaded and running!");
 
     const languageSwitcher = document.getElementById("language-switcher");
 
-    // Ensure dropdown exists before proceeding
     if (!languageSwitcher) {
         console.error("❌ Language switcher dropdown not found!");
         return;
     }
 
-    console.log("✅ Language switcher dropdown found!"); // Debugging
+    console.log("✅ Language switcher dropdown found!");
+
+    console.log("🟢 Testing: Creating translations object...");
 
     // Language Translations
     const translations = {
@@ -45,29 +46,37 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     };
 
+    console.log("🟢 Testing: Translations object created successfully!");
+
     // Function to Change Language
     function changeLanguage(lang) {
-        console.log("🌍 Changing language to:", lang); // Debugging
-    
+        console.log("🌍 Changing language to:", lang);
+
         // Test if elements exist
         const elements = document.querySelectorAll("[data-key]");
         console.log("🔍 Found elements with data-key:", elements.length);
-    
+
+        if (elements.length === 0) {
+            console.error("❌ No elements found with data-key attribute! Check index.html.");
+            return;
+        }
+
         elements.forEach(element => {
             const key = element.getAttribute("data-key");
             console.log(`🔑 Updating key: ${key} with ${translations[lang][key]}`);
-    
+
             if (translations[lang] && translations[lang][key]) {
                 element.textContent = translations[lang][key];
             } else {
                 console.warn(`⚠️ Missing translation for key: ${key} in language: ${lang}`);
             }
         });
-    
+
         // Save Language Preference in Local Storage
         localStorage.setItem("selectedLanguage", lang);
     }
 
+    console.log("🟢 Testing: Adding event listener to language switcher...");
 
     // Event Listener for Language Selection
     languageSwitcher.addEventListener("change", function () {
@@ -75,8 +84,12 @@ document.addEventListener("DOMContentLoaded", function () {
         changeLanguage(this.value);
     });
 
+    console.log("🟢 Testing: Loading saved language preference...");
+
     // Load Saved Language on Page Load
-    const savedLanguage = localStorage.getItem("selectedLanguage") || "mr"; // Default Marathi
+    const savedLanguage = localStorage.getItem("selectedLanguage") || "mr";
     languageSwitcher.value = savedLanguage;
     changeLanguage(savedLanguage);
+
+    console.log("🟢 Testing: Script execution completed successfully!");
 });
