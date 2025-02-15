@@ -50,13 +50,11 @@ header {
 
 /* 🔹 Navigation Fix - Forces Exact Center */
 .nav-container {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    flex-grow: 1; /* Allow nav-container to take remaining space */
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: center; /* Center navigation properly */
 }
+
 
 /* 🔹 Navigation Styling */
 nav {
@@ -77,23 +75,28 @@ nav a:hover {
     color: #8B5E3C; /* Slightly darker brown on hover */
 }
 
-/* 🔹 Language Selector - Fix Alignment & Size */
+/* 🔹 Language Selector - Fix Alignment & Prevent Overflow */
 .language-selector {
     display: flex;
     justify-content: flex-end;
     padding-right: 10px;
+    position: relative; /* Allow precise control */
 }
 
 .language-selector select {
-    font-size: 14px; /* Smaller font */
-    padding: 4px; /* Smaller padding */
+    font-size: 14px;
+    padding: 4px;
     border-radius: 5px;
     border: 1px solid #5A3E1B;
     background-color: #FFF5E1;
     cursor: pointer;
     outline: none;
-    width: 120px; /* Adjust width */
+    width: 120px;
+    position: absolute;  /* Prevent overflow */
+    right: 0;  /* Ensures it doesn’t overflow */
+    max-width: 95%; /* Prevents it from going out of the screen */
 }
+
 
 /* 🔹 Fix for Main Content Centering */
 .container {
