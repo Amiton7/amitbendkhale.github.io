@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("✅ script.js is loaded and running!"); // Debugging
+
     const languageSwitcher = document.getElementById("language-switcher");
 
     // Ensure dropdown exists before proceeding
     if (!languageSwitcher) {
-        console.error("Language switcher dropdown not found!");
+        console.error("❌ Language switcher dropdown not found!");
         return;
     }
+
+    console.log("✅ Language switcher dropdown found!"); // Debugging
 
     // Language Translations
     const translations = {
@@ -43,14 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Function to Change Language
     function changeLanguage(lang) {
-        console.log("Changing language to:", lang); // Debugging Log
+        console.log("🌍 Changing language to:", lang); // Debugging
 
         document.querySelectorAll("[data-key]").forEach(element => {
             const key = element.getAttribute("data-key");
             if (translations[lang] && translations[lang][key]) {
                 element.textContent = translations[lang][key];
             } else {
-                console.warn(`Missing translation for key: ${key} in language: ${lang}`);
+                console.warn(`⚠️ Missing translation for key: ${key} in language: ${lang}`);
             }
         });
 
@@ -60,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event Listener for Language Selection
     languageSwitcher.addEventListener("change", function () {
-        console.log("Language changed to:", this.value); // Debugging Log
+        console.log("🔄 Language changed to:", this.value);
         changeLanguage(this.value);
     });
 
